@@ -15,6 +15,7 @@
 		DDBBFAC21DB42389008E342A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBBFAC01DB42389008E342A /* LaunchScreen.storyboard */; };
 		DDBBFACD1DB42389008E342A /* ContactBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFACC1DB42389008E342A /* ContactBookTests.swift */; };
 		DDBBFAD81DB42389008E342A /* ContactBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFAD71DB42389008E342A /* ContactBookUITests.swift */; };
+		DDBBFAE61DB42650008E342A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFAE51DB42650008E342A /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DDBBFAD31DB42389008E342A /* ContactBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBBFAD71DB42389008E342A /* ContactBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactBookUITests.swift; sourceTree = "<group>"; };
 		DDBBFAD91DB42389008E342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBBFAE51DB42650008E342A /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DDBBFABE1DB42389008E342A /* Assets.xcassets */,
 				DDBBFAC01DB42389008E342A /* LaunchScreen.storyboard */,
 				DDBBFAC31DB42389008E342A /* Info.plist */,
+				DDBBFAE51DB42650008E342A /* AddViewController.swift */,
 			);
 			path = ContactBook;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				DDBBFABA1DB42389008E342A /* DetailViewController.swift in Sources */,
 				DDBBFAB81DB42389008E342A /* MasterViewController.swift in Sources */,
+				DDBBFAE61DB42650008E342A /* AddViewController.swift in Sources */,
 				DDBBFAB61DB42389008E342A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
