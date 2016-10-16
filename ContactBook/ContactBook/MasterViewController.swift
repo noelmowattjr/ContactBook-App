@@ -44,8 +44,8 @@ class MasterViewController: UITableViewController {
 //        let indexPath = IndexPath(row: 0, section: 0)
 //        self.tableView.insertRows(at: [indexPath], with: .automatic)
         
-        //--when pressed it sends us to new view controller via
-        //--the segue i had created called 'addSegue'
+        //--when '+' bar buttn pressed it sends us to AddVC via
+        //--the segue I created called 'addSegue'
         self.performSegue(withIdentifier: "addSegue", sender: self)
     }
 

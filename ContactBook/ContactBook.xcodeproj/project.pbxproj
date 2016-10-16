@@ -16,6 +16,7 @@
 		DDBBFACD1DB42389008E342A /* ContactBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFACC1DB42389008E342A /* ContactBookTests.swift */; };
 		DDBBFAD81DB42389008E342A /* ContactBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFAD71DB42389008E342A /* ContactBookUITests.swift */; };
 		DDBBFAE61DB42650008E342A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFAE51DB42650008E342A /* AddViewController.swift */; };
+		DDBBFAE81DB43631008E342A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBBFAE71DB43631008E342A /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DDBBFAD71DB42389008E342A /* ContactBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactBookUITests.swift; sourceTree = "<group>"; };
 		DDBBFAD91DB42389008E342A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDBBFAE51DB42650008E342A /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		DDBBFAE71DB43631008E342A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				DDBBFAB51DB42389008E342A /* AppDelegate.swift */,
 				DDBBFAB71DB42389008E342A /* MasterViewController.swift */,
+				DDBBFAE71DB43631008E342A /* Person.swift */,
 				DDBBFAE51DB42650008E342A /* AddViewController.swift */,
 				DDBBFAB91DB42389008E342A /* DetailViewController.swift */,
 				DDBBFABB1DB42389008E342A /* Main.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDBBFAE81DB43631008E342A /* Person.swift in Sources */,
 				DDBBFABA1DB42389008E342A /* DetailViewController.swift in Sources */,
 				DDBBFAB81DB42389008E342A /* MasterViewController.swift in Sources */,
 				DDBBFAE61DB42650008E342A /* AddViewController.swift in Sources */,
