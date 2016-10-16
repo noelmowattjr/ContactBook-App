@@ -103,12 +103,12 @@
 			children = (
 				DDBBFAB51DB42389008E342A /* AppDelegate.swift */,
 				DDBBFAB71DB42389008E342A /* MasterViewController.swift */,
+				DDBBFAE51DB42650008E342A /* AddViewController.swift */,
 				DDBBFAB91DB42389008E342A /* DetailViewController.swift */,
 				DDBBFABB1DB42389008E342A /* Main.storyboard */,
 				DDBBFABE1DB42389008E342A /* Assets.xcassets */,
 				DDBBFAC01DB42389008E342A /* LaunchScreen.storyboard */,
 				DDBBFAC31DB42389008E342A /* Info.plist */,
-				DDBBFAE51DB42650008E342A /* AddViewController.swift */,
 			);
 			path = ContactBook;
 			sourceTree = "<group>";
@@ -429,6 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noelmowattjr.ContactBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,6 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noelmowattjr.ContactBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
