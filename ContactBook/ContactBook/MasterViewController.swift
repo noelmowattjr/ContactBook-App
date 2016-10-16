@@ -36,11 +36,17 @@ class MasterViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //--called when Add button is pressed
+    //--This creates a new object and inserts new row in table
     func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        self.tableView.insertRows(at: [indexPath], with: .automatic)
+//        objects.insert(NSDate(), at: 0)
+//        let indexPath = IndexPath(row: 0, section: 0)
+//        self.tableView.insertRows(at: [indexPath], with: .automatic)
+        
+        //--when pressed it sends us to new view controller via
+        //--the segue i had created called 'addSegue'
+        self.performSegue(withIdentifier: "addSegue", sender: self)
     }
 
     // MARK: - Segues
