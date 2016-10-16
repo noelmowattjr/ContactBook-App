@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+//--Define new class
+class AddViewController: UIViewController{
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+}

@@ -58,6 +58,24 @@
             </objects>
             <point key="canvasLocation" x="709" y="129"/>
         </scene>
+        <!--Add View Controller-->
+        <scene sceneID="5jh-1a-GFS">
+            <objects>
+                <viewController id="L0T-dn-OD2" customClass="AddViewController" customModule="ContactBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qsl-7a-7jB"/>
+                        <viewControllerLayoutGuide type="bottom" id="r15-0f-3JZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2AS-EZ-yjf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOs-nB-GFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="-130"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
