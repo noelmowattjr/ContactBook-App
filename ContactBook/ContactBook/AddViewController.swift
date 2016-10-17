@@ -24,6 +24,9 @@ class AddViewController: UIViewController, UITextFieldDelegate{
         
         //--Dismiss keyboard when Add button pressed
         nameField.resignFirstResponder()
+        
+        let p = Person(fName: nameField.text!)
+        print("Created a person: \(p.fName)")
     }
     
     override func viewDidLoad() {

@@ -8,6 +8,7 @@
 
 import Foundation
 
+//--Represents each person in contact book
 class Person{
     var fName: String?
     var lName: String?
