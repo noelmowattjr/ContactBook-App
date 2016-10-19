@@ -39,7 +39,7 @@ class AddViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         
         //--Dismiss keyboard delegate setup
-        nameField.delegate = self
+        //nameField.delegate = self
     }
     
     //--Dismiss keyboard when view is tapped
