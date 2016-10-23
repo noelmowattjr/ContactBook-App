@@ -125,6 +125,9 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="0.50784060080305926" green="0.087086834036302685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AddButtonPressedWithSender:" destination="L0T-dn-OD2" eventType="touchUpInside" id="U2V-gy-e7L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78898126058792184" green="0.91427627914139453" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,6 +161,13 @@
                             <constraint firstItem="5oR-TO-bcV" firstAttribute="leading" secondItem="ZiH-Bx-bmU" secondAttribute="leading" id="z1U-uw-y3p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressField" destination="dJx-U3-ERL" id="jr3-Xv-lpF"/>
+                        <outlet property="emailField" destination="5oR-TO-bcV" id="zHJ-c4-4kN"/>
+                        <outlet property="lastField" destination="csg-tc-K3L" id="1nI-4L-vFd"/>
+                        <outlet property="nameField" destination="3ja-sH-2gF" id="UzV-of-Qq3"/>
+                        <outlet property="phoneField" destination="ZiH-Bx-bmU" id="Oih-mJ-IFW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOs-nB-GFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

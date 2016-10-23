@@ -15,8 +15,12 @@ import UIKit
 
 class AddViewController: UIViewController, UITextFieldDelegate{
     
-    //--Outlet name field 
+    //--Outlet fields
     @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var lastField: UITextField!
+    @IBOutlet weak var phoneField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var addressField: UITextField!
     
     //--Add button func
     @IBAction func AddButtonPressed(sender: UIButton){
