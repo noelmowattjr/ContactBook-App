@@ -43,17 +43,30 @@ class AddViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         
         //--Dismiss keyboard delegate setup
-        //nameField.delegate = self
+        nameField.delegate = self
+        lastField.delegate = self
+        phoneField.delegate = self
+        emailField.delegate = self
+        addressField.delegate = self
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dissMissKeyboard))
+        //--Add to view
+        view.addGestureRecognizer(tap)
+    }
+    
+    //--Selector to dismiss keyboard
+    func dissMissKeyboard(){
+        view.endEditing(true)
     }
     
     //--Dismiss keyboard when view is tapped
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(false)
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        view.endEditing(false)
+//    }
     
     //--Dismiss keyboard when Return key is tapped
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        nameField.resignFirstResponder()
+        view.endEditing(true)
         return false
     }
     
