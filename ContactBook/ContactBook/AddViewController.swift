@@ -65,6 +65,14 @@ class AddViewController: UIViewController, UITextFieldDelegate{
                 errorMsg = "Invalid Address"
             }
             
+            //--------
+            let alert = UIAlertController(title: "Error", message: "Error creating contact", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+            //--------
+            
         } catch{
             
         }
