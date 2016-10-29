@@ -22,21 +22,58 @@ class AddViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var addressField: UITextField!
     
+    //--add Person class as property
+    var person: Person?
+    
     //--Add button func
     @IBAction func AddButtonPressed(sender: UIButton){
         print("Add button pressed")
         
-        //--Dismiss keyboard when Add button pressed
-        nameField.resignFirstResponder()
-        
-        if let p = Person(fName: nameField.text!){
-            print("Created a person: \(p.fName)")
-            
-            self.navigationController?.popViewController(animated: true)
-        } else {
-            print("Error creating Person")
+        //--Testing to see if there is a person property set already
+        if person == nil {
+            if let p = Person(fName: nameField.text!){
+                person = p
+            } else {
+                let alert = UIAlertController(title: "Error", message: "Error creating contact", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+                
+                self.present(alert, animated: true, completion: nil)
+                    
+                return
+            }
         }
         
+        do{
+            try person!.setFirstName(fn: nameField.text!)
+            try person!.setLastName(ln: lastField.text!)
+            try person!.setPhone(pn: phoneField.text!)
+            try person!.setEmail(em: emailField.text!)
+            try person!.setAddress(ad: addressField.text!)
+            
+        } catch let error as PersonValidationError {
+            var errorMsg = ""
+            
+            switch (error) {
+            case .InvalidFirstName:
+                errorMsg = "Invalid first name"
+            case .InvalidPhone:
+                errorMsg = "Invalid phone number"
+            case .InvalidEmail:
+                errorMsg = "Invalid email"
+            case .InvalidAddress:
+                errorMsg = "Invalid Address"
+            }
+            
+        } catch{
+            
+        }
+        
+        //--Dismiss keyboard when Add button pressed
+        nameField.resignFirstResponder()
+
+        //--if everything happens successfully then run this line
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
